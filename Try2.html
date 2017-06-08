@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="My Video Player">
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <link rel="stylesheet" href="Try2.css"/>
+<script src="includes/videosub-0.9.9.js"></script>
+
+</head>
+<body>
+  <section class="container">
+   <video poster="http://imgur.com/vlSU4RH.png" id="myvideo" width="480" height="270">
+   <source src="assignment.mp4" type="video/mp4">
+    <track src="s_s.srt" kind="subtitle" srclang="en-US" label="English"/>
+Your browser does not support the video tag.
+ 
+
+</video>
+<div class="controlpanel"> 
+  <div class="title">Control Panel</div>
+  <button onclick="playVideo();"><b>Play</b></button>
+
+  <button onclick="pauseVideo();">Pause</button>
+  <button onclick="stopVideo();">Stop</button>
+  <button onclick="rewindVideo();">
+     Back to beginning
+  </button>
+  </section>
+    </div>
+<script>
+    myvideo = document.querySelector("#myvideo");
+  
+function playVideo() {
+  myvideo.play();
+}
+function pauseVideo() {
+  myvideo.pause();
+}
+function stopVideo() {
+  myvideo.load();
+}  
+function rewindVideo() {
+  myvideo.currentTime = 0;
+}
+</script>
+
+</body>
+</html>
