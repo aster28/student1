@@ -1,4 +1,4 @@
-.container{
+ .container{
     margin-left:35%;
     margin-top:10%;
     background-image:url("http://i.imgur.com/R7zUmdL.jpg");
@@ -40,5 +40,5 @@ button:hover{
 video{
  border-radius: 10px;
  border: 2px solid red;
-
+width:35%;
 }
